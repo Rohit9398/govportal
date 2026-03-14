@@ -10,7 +10,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 /* MongoDB Atlas Connection */
-mongoose.connect(process.env.MONGO_URI)
+const MONGO_URI = "mongodb+srv://Rohityadav:9398Rohityadav%40@cluster1.3gvatip.mongodb.net/govportal";
+
+mongoose.connect(MONGO_URI)
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log("MongoDB Error:", err));
 
@@ -40,6 +42,7 @@ app.post("/register", async (req, res) => {
     await newUser.save();
 
     res.send("User Registered Successfully");
+
   } catch (error) {
     console.log(error);
     res.send("Registration Error");
@@ -99,7 +102,7 @@ app.post("/apply", upload.single("document"), async (req, res) => {
   }
 });
 
-/* Server Port (Render Compatible) */
+/* Server Port */
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
