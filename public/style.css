@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body{
 margin:0;
 font-family:Arial;
@@ -62,69 +61,4 @@ padding:30px;
 border-radius:15px;
 width:200px;
 text-align:center;
-=======
-body{
-margin:0;
-font-family:Arial;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-color:white;
-}
-
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
-background:#0d1b2a;
-}
-
-.logo{
-font-size:22px;
-font-weight:bold;
-}
-
-nav a{
-margin:0 15px;
-text-decoration:none;
-color:white;
-}
-
-.nav-right input{
-padding:6px;
-border-radius:5px;
-border:none;
-}
-
-.login-btn{
-background:#ff4d6d;
-padding:8px 15px;
-border-radius:20px;
-text-decoration:none;
-color:white;
-}
-
-.hero{
-text-align:center;
-margin-top:80px;
-}
-
-.hero h1{
-font-size:50px;
-color:#ffd60a;
-}
-
-.stats{
-display:flex;
-justify-content:center;
-margin-top:60px;
-gap:30px;
-}
-
-.card{
-background:rgba(255,255,255,0.1);
-padding:30px;
-border-radius:15px;
-width:200px;
-text-align:center;
->>>>>>> d5e34b406f5009b7deb13789129db66613892f74
 }
